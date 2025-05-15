@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+let a = 12;
+let b = 18;
+function gcd(x, y) {
+    if (y === 0) {
+        return x;
+    } else {
+        return gcd(y, x % y);
+    }
+}
+let result = gcd(a,b);
+document.write(`${a} 與 ${b} 之最大公因數為 ${result}`);
+</script>
+
+
+    
+</body>
+</html>

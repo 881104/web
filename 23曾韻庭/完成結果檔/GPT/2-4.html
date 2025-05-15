@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //請寫一段程式解出下列問題：已知雞兔共35隻，雞兔的腳共94支，請問籠子裡雞兔各有幾隻？
+          
+        for (var x = 0; x <= 35; x++) {
+            if (2 * x + 4 * (35 - x) == 94) {
+                document.write("雞為" + x + "隻, 兔子為" + (35 - x) + "隻");
+                break;
+            }
+
+        }
+
+
+        document.write("<hr>");
+    </script>
+</body>
+</html>

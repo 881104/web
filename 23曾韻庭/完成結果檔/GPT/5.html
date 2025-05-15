@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 已知第一個數和第二個數為1，第n為第n-1+第n-2，請撰寫一段程式使其能找出第n數為數列上的哪一個數字
+        function fibonacci(n) {
+            if (n === 1 || n === 2) {
+                return 1; // 前兩個數皆為 1
+            }
+            let x = 1, y = 1, sum = 0;
+            for (let i = 3; i <= n; i++) {
+                sum = x + y;
+                x = y;
+                y = sum;
+            }
+            return sum;
+        }
+
+        let n = 50; // 設定要找的第 n 個數
+        let result = fibonacci(n);
+
+        document.write("第 " + n + " 個數為: " + result);
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 宣告身高與體重的陣列
+        let heights = [175, 168, 180]; // 單位：公分
+        let weights = [68, 75, 85]; // 單位：公斤
+
+        // 將身高轉換為公尺並計算 BMI
+        let bmis = [];
+        for (let i = 0; i < heights.length; i++) {
+            let heightInMeters = heights[i] / 100; // 將公分轉換為公尺
+            let bmi = weights[i] / (heightInMeters * heightInMeters); // BMI 計算公式
+            bmis.push(bmi); // 將 BMI 加入陣列
+        }
+
+        // 找出最小的 BMI 值
+        let minBmi = Math.min(...bmis);
+        let roundedMinBmi = Math.round(minBmi); // 四捨五入
+
+        // 判斷 BMI 是否在正常範圍內 (18.5 ~ 24)
+        if (roundedMinBmi >= 18.5 && roundedMinBmi <= 24) {
+            document.write(`最小值為 ${roundedMinBmi}，BMI 正常`);
+        } else {
+            document.write(`最小值為 ${roundedMinBmi}，BMI 不正常`);
+        }
+    </script>
+</body>
+</html>  
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>變數交換</title>
+</head>
+<body>
+    <script>
+        // 宣告兩個任意整數變數
+        let x = 5;
+        let y = 10;
+
+        // 交換兩變數的值，不使用新變數
+        x = x + y;
+        y = x - y;
+        x = x - y;
+
+        // 顯示交換後的結果
+        document.write(`交換後的 x 值: ${x}<br>`);
+        document.write(`交換後的 y 值: ${y}`);
+    </script>
+</body>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>計算非3倍數的總和</title>
+</head>
+<body>
+    <p id="result"></p>
+
+    <script>
+        let sum = 0; // 初始化總和變數
+        for (let i = 1; i <= 1000; i++) {
+            if (i % 3 !== 0) { // 判斷是否不是 3 的倍數
+                sum += i; // 累加到總和
+            }
+        }
+        document.getElementById("result").innerText = `總和為: ${sum}`;
+    </script>
+</body>
+</html>

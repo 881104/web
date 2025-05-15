@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列出非5的倍數</title>
+</head>
+<body>
+    <p id="result"></p>
+
+    <script>
+        let result = ""; // 儲存結果的字串
+        for (let i = 1; i <= 100; i++) {
+            if (i % 5 !== 0) { // 判斷是否不是 5 的倍數
+                result += i + " "; // 將數字加入結果字串
+            }
+        }
+        document.getElementById("result").innerText = result.trim(); // 顯示結果
+    </script>
+</body>
+</html>

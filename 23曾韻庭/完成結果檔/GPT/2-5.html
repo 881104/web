@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>費氏數列第 N 個數字</title>
+</head>
+<body>
+    <script>
+        // 宣告 n，表示要找出費氏數列的第 n 個數字
+        let n = 10; // 可以修改這裡的 n 值
+
+        // 費氏數列計算邏輯
+        let a = 1, b = 1; // 費氏數列的前兩個數字為 1
+        let result = 1; // 預設為第 1 或第 2 個數字的值
+
+        if (n === 1 || n === 2) {
+            result = 1; // 第 1 和第 2 個數字固定為 1
+        } else {
+            for (let i = 3; i <= n; i++) { // 從第 3 個數字開始計算
+                result = a + b; // 計算當前數字
+                a = b; // 更新 a 為前一個數字
+                b = result; // 更新 b 為當前數字
+            }
+        }
+
+        // 顯示結果
+        document.write(`費氏數列第 ${n} 個數字為: ${result}`);
+    </script>
+</body>
+</html>

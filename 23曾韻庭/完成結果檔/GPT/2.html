@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>攝氏轉華氏</title>
+</head>
+<body>
+    <p id="result"></p>
+
+    <script>
+        // 攝氏轉華氏公式：華氏 = (攝氏 * 9 / 5) + 32
+        const celsius = 30; // 直接給定攝氏溫度
+        const fahrenheit = (celsius * 9 / 5) + 32; // 計算華氏溫度
+        document.getElementById("result").innerText = `攝氏 ${celsius} 度等於華氏 ${fahrenheit.toFixed(2)} 度。`;
+    </script>
+</body>
+</html>

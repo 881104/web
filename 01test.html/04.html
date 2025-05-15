@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<,>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=10;
+        a =20;
+        a = a + 10;
+        a+=10;
+        a-=10;
+        a*=10;
+        a/=10;
+        a%=4;
+        a=a+1;
+        a+=1;
+        a++;
+        ++a;
+        document.write("a=" + a);
+
+        document.write("<hr>");
+    </script>
+
+////////////////////////////////////////////////////
+//兩數交換
+//請宣告兩變數分別為x與y，請給ｘ，ｙ任意的數值,程式內容請把ｘ與ｙ的值對調
+//但不可以再宣告任何新的變數, 並輸入對調後的結果
+
+<script>
+
+var x = 5, y = 1;
+x=x+y;//左邊新更正的x=右邊舊的x+舊的y
+y=x-y;//左邊新更正的y=上面新的x-舊的y
+x=x-y://左邊更新更正的x=第一行新的x-第二行新的y(最舊的x)
+
+
+
+document.write("x=" + x + ", y=" + y);
+
+
+</script>
+
+</body>
+</html>
